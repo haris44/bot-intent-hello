@@ -1,9 +1,5 @@
 export const hello = [
-    "Salut",
-    "Coucou",
-    "Salut moi c'est Thoune",
-    "Hola ! ",
-    "Hey",
-    "Hello",
-    "Salutations mon amis ! ",
+    "Bonjour, je suis ici pour vous aider dans vos démarches de Pôle emploi",
+    "Bonjour !",
+    "Bienvenue chez Pôle emploi !"
 ]

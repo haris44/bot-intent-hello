@@ -6,7 +6,14 @@ const connexionEstablished = connexion()
 
 assertQueue(connexionEstablished, ($message) => {
     logic($message).then(response => {
-        sendTo(connexionEstablished, JSON.stringify(response))
+        if (response.length >= 1) {
+            response.forEach(element => {
+                console.log(element)
+                sendTo(connexionEstablished, JSON.stringify(element))
+            });
+        } else {
+            sendTo(connexionEstablished, JSON.stringify(response))
+        }
     }).catch((err) => {
         console.error(err)
     })

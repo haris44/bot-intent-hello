@@ -4,6 +4,6 @@ import { hello } from '../src/hello'
 
 test(t => {
     return logic({ message: { content: 'hello' } }).then(element => {
-        t.true(hello.includes(element.message.content))
+        t.true(hello.includes(element.content))
     })
 })
